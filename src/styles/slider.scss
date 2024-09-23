@@ -1,0 +1,91 @@
+.slider {
+  width: 1238px;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+  }
+
+  &__slides {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    &_prev {
+      background-image: url('../images/reviews_arrow-disabled.svg');
+    }
+
+    &_next {
+      background-image: url('../images/reviews_arrow-disabled.svg');
+      transform: rotate(180deg);
+    }
+  }
+
+  &__bullets {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 17px;
+  }
+
+  &__bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #C2C8CD;
+    cursor: pointer;
+
+    &_active {
+      background-color: $primary-color;
+    }
+  }
+
+  .body-text-12 {
+    color: $dark-grey-color;
+  }
+
+  .slide {
+    width: 341px;
+    border-radius: 8px;
+    padding: 22px;
+    background-color: $white-color;
+    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &__avatar {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &_1 .slide__avatar {
+      background: url('../images/reviews_avatar-1.png');
+    }
+
+    &__header {
+      display: flex;
+      column-gap: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}

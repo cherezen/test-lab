@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Graphic LCG';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/GraphikLCG-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Graphic LCG';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/GraphikLCG-Semibold.woff');
+}
+
+.headline {
+  font-weight: 600;
+
+  &-1 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+
+  &-2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  &-3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &-4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &-5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &-6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 12%;
+}
+
+.body-text {
+  &-18 {
+    font-size: 18px;
+    line-height: 32px;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+
+  &-16 {
+    font-size: 16px;
+    line-height: 28px;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+
+  &-14 {
+    font-size: 14px;
+    line-height: 24px;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+
+  &-12 {
+    font-size: 12px;
+    line-height: 16px;
+
+    &-bold {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+
+  &__image {
+    position: relative;
+    width: 36px;
+    height: 24px;
+
+    &-elem {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+
+      &_1 {
+        background-color: $primary-color;
+      }
+
+      &_2 {
+        background-color: $light-grey-color;
+        left: 12px;
+      }
+    }
+  }
+
+  &__name {
+    color: $white-color;
+  }
+}
+
+.nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  &__item {
+    list-style-type: none;
+
+    a {
+      text-decoration: none;
+      color: $white-color;
+      font-weight: 400;
+    }
+
+    &:hover {
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

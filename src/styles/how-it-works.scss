@@ -1,0 +1,31 @@
+.how-it-works {
+  padding-top: 80px;
+
+  h2 {
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 280px;
+    list-style-type: none;
+
+    .icon {
+      margin-bottom: 16px;
+    }
+
+    .headline {
+      margin-bottom: 4px;
+    }
+
+    .body-text-14 {
+      color: $dark-grey-color;
+    }
+
+  }
+}

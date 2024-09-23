@@ -1,0 +1,143 @@
+.submit {
+  padding: 80px 0;
+
+  .headline {
+    text-align: center;
+  }
+}
+
+.form {
+  margin: 44px auto 0;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  &__input {
+    position: relative;
+
+    &-label {
+      display: none;
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      z-index: 1;
+    }
+
+    input {
+      width: 384px;
+      height: 64px;
+      padding: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: $extralight-grey-color;
+      outline: transparent;
+
+      &[type="text"] {
+        &:focus {
+          background-color: $white-color;
+          border: 2px solid $midgrey-color;
+          padding: 28px 16px 4px;
+
+          &~.form__input-label {
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            z-index: 1;
+          }
+
+          &::placeholder {
+            color: $midgrey-color;
+          }
+
+        }
+      }
+
+
+
+      &[type="submit"] {
+        width: 384px;
+        background-color: $primary-color;
+        color: $white-color;
+
+        &:hover {
+          background-color: $primary-hover-color;
+        }
+      }
+
+    }
+  }
+
+  .success {
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: url('../images/success.svg');
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      right: 16px;
+      top: 22px;
+    }
+  }
+
+  .error {
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: url('../images/error.svg');
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1;
+      right: 16px;
+      top: 22px;
+    }
+
+    input {
+      border: 2px solid $dangerous-color;
+    }
+
+    .form__input-helper {
+      margin-top: 5px;
+      color: $dangerous-color;
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  cursor: pointer;
+
+  &__square {
+    width: 24px;
+    height: 24px;
+    border: 2px solid $midgrey-color;
+    border-radius: 2px;
+
+  }
+
+  input {
+    display: none;
+
+    &:checked~div {
+      background-color: $primary-color;
+      background-image: url('../images/check.svg');
+      background-position: center center;
+      background-size: auto;
+      background-repeat: no-repeat;
+      border-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.articles {
+  padding: 68px 0 67px 0;
+  background-color: $extralight-grey-color;
+
+  &__wrapper {
+    display: flex;
+    gap: 37px 32px;
+    flex-wrap: wrap;
+  }
+}
+
+.article {
+  width: 592px;
+
+  .body-text-18 {
+    margin-bottom: 17px;
+  }
+}

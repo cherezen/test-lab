@@ -1,0 +1,68 @@
+@import "typography.scss";
+@import "colors.scss";
+@import "header.scss";
+@import "main.scss";
+@import "how-it-works.scss";
+@import "third-block.scss";
+@import "reviews.scss";
+@import "slider.scss";
+@import "questions.scss";
+@import "articles.scss";
+@import "submit.scss";
+@import "footer.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Graphic LCG';
+  font-weight: 400;
+  color: $black-color;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 1216px;
+}
+
+.button {
+  padding: 19px 40px;
+  background-color: $light-grey-color;
+  color: $black-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid $light-grey-color;
+
+  &:hover {
+    padding: 19px 40px;
+    background-color: $white-color;
+    border: 1px solid $midgrey-color;
+  }
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_1 {
+    background-image: url('../images/how-it-works_icon-1.svg');
+  }
+
+  &_2 {
+    background-image: url('../images/how-it-works_icon-2.svg');
+  }
+
+  &_3 {
+    background-image: url('../images/how-it-works_icon-3.svg');
+  }
+
+  &_4 {
+    background-image: url('../images/how-it-works_icon-4.svg');
+  }
+}

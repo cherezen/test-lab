@@ -10,6 +10,7 @@ module.exports = (env) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].[contenthash].js',
+      // publicPath: './',
       clean: true
     },
     plugins: [
@@ -24,13 +25,17 @@ module.exports = (env) => {
     module: {
       rules: [
         {
+          test: /\.html$/i,
+          loader: "html-loader",
+        },
+        {
           test: /\.js$/,
           exclude: /node_modules/,
           use: ['babel-loader'],
         },
         {
           test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-          type: 'asset/resource',
+          type: 'asset/inline',
         },
         {
           test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,

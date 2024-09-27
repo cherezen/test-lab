@@ -1,6 +1,12 @@
 .menu {
   display: none;
   padding: 0 16px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: $white-color;
 
   &__header {
     height: 80px;
@@ -23,6 +29,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
 
     span {
       display: block;
@@ -64,5 +71,9 @@
       border: none;
     }
 
+  }
+
+  &_visible {
+    display: block;
   }
 }

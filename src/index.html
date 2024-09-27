@@ -9,8 +9,8 @@
 
 <body>
   <div id="root">
-    <header class="header">
-      <div class="container">
+    <header class="header" id="header">
+      <div class="header__container">
         <nav class="header__nav nav">
           <div class="header__logo logo">
             <div class="logo__image">
@@ -33,7 +33,7 @@
               <a href="#submit" class="body-text-16">Форма</a>
             </li>
           </ul>
-          <div class="nav__mobile">
+          <div class="nav__mobile" id="menu__button">
             <span></span>
             <span></span>
           </div>
@@ -41,7 +41,7 @@
       </div>
     </header>
 
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="menu__header">
         <div class="menu__logo logo">
           <div class="logo__image">
@@ -50,7 +50,7 @@
           </div>
           <div class="logo__name headline headline-5">testLab</div>
         </div>
-        <div class="menu__close">
+        <div class="menu__close" id="menu__close">
           <span></span>
           <span></span>
         </div>
@@ -254,189 +254,189 @@
         </div>
 
       </div>
+    </section>
 
-  </div>
-  </section>
+    <section class="questions" id="questions">
+      <div class="container">
+        <h2 class="headline headline-2">Вопросы и ответы</h2>
+        <div class="questions__wrapper">
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <p class="body-text-18 body-text-18-bold">Подтверждено: сознание наших соотечественников не замутнено
+                пропагандой?</p>
+              <button class="questions__button"></button>
+            </summary>
+            <div>
+              <p class="questions__text body-text-18">
+                В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
+                разработке дальнейших
+                направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
+                говорит о возможностях существующих финансовых и административных условий.
+              </p>
+            </div>
+          </details>
 
-  <section class="questions" id="questions">
-    <div class="container">
-      <h2 class="headline headline-2">Вопросы и ответы</h2>
-      <div class="questions__wrapper">
-        <details class="questions__details">
-          <summary class="questions__summary">
-            <p class="body-text-18 body-text-18-bold">Подтверждено: сознание наших соотечественников не замутнено
-              пропагандой?</p>
-            <button class="questions__button"></button>
-          </summary>
-          <div>
-            <p class="questions__text body-text-18">
-              В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-              разработке дальнейших
-              направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
-              говорит о возможностях существующих финансовых и административных условий.
-            </p>
-          </div>
-        </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <p class="body-text-18 body-text-18-bold">Прототип нового сервиса - это как трубный призыв?</p>
+              <button class="questions__button"></button>
+            </summary>
+            <div>
+              <p class="questions__text body-text-18">
+                В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
+                разработке дальнейших
+                направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
+                говорит о возможностях существующих финансовых и административных условий.
+              </p>
+            </div>
+          </details>
 
-        <details class="questions__details">
-          <summary class="questions__summary">
-            <p class="body-text-18 body-text-18-bold">Прототип нового сервиса - это как трубный призыв?</p>
-            <button class="questions__button"></button>
-          </summary>
-          <div>
-            <p class="questions__text body-text-18">
-              В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-              разработке дальнейших
-              направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
-              говорит о возможностях существующих финансовых и административных условий.
-            </p>
-          </div>
-        </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <p class="body-text-18 body-text-18-bold">Очевидцы сообщают, что слышали грохот грома градущих изменений?
+              </p>
+              <button class="questions__button"></button>
+            </summary>
+            <div>
+              <p class="questions__text body-text-18">
+                В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
+                разработке дальнейших
+                направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
+                говорит о возможностях существующих финансовых и административных условий.
+              </p>
+            </div>
+          </details>
 
-        <details class="questions__details">
-          <summary class="questions__summary">
-            <p class="body-text-18 body-text-18-bold">Очевидцы сообщают, что слышали грохот грома градущих изменений?
-            </p>
-            <button class="questions__button"></button>
-          </summary>
-          <div>
-            <p class="questions__text body-text-18">
-              В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-              разработке дальнейших
-              направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
-              говорит о возможностях существующих финансовых и административных условий.
-            </p>
-          </div>
-        </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <p class="body-text-18 body-text-18-bold">И по сей день в центральных регионах звучит перекатами печальный
+                плач
+                оппозиции?</p>
+              <button class="questions__button"></button>
+            </summary>
+            <div>
+              <p class="questions__text body-text-18">
+                В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
+                разработке дальнейших
+                направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
+                говорит о возможностях существующих финансовых и административных условий.
+              </p>
+            </div>
+          </details>
 
-        <details class="questions__details">
-          <summary class="questions__summary">
-            <p class="body-text-18 body-text-18-bold">И по сей день в центральных регионах звучит перекатами печальный
-              плач
-              оппозиции?</p>
-            <button class="questions__button"></button>
-          </summary>
-          <div>
-            <p class="questions__text body-text-18">
-              В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-              разработке дальнейших
-              направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
-              говорит о возможностях существующих финансовых и административных условий.
-            </p>
-          </div>
-        </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <p class="body-text-18 body-text-18-bold">Нынче никто не может себе позволить инициировать треск
+                разлетающихся скреп?
+              </p>
+              <button class="questions__button"></button>
+            </summary>
+            <div>
+              <p class="questions__text body-text-18">
+                В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
+                разработке дальнейших
+                направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
+                говорит о возможностях существующих финансовых и административных условий.
+              </p>
+            </div>
+          </details>
 
-        <details class="questions__details">
-          <summary class="questions__summary">
-            <p class="body-text-18 body-text-18-bold">Нынче никто не может себе позволить инициировать треск
-              разлетающихся скреп?
-            </p>
-            <button class="questions__button"></button>
-          </summary>
-          <div>
-            <p class="questions__text body-text-18">
-              В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-              разработке дальнейших
-              направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
-              говорит о возможностях существующих финансовых и административных условий.
-            </p>
-          </div>
-        </details>
-
-        <details class="questions__details">
-          <summary class="questions__summary">
-            <p class="body-text-18 body-text-18-bold">Высококачественный прототип будущего проекта обнадёживает?</p>
-            <button class="questions__button"></button>
-          </summary>
-          <div>
-            <p class="questions__text body-text-18">
-              В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
-              разработке дальнейших
-              направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
-              говорит о возможностях существующих финансовых и административных условий.
-            </p>
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="articles">
-    <div class="container">
-      <div class="articles__wrapper">
-        <div class="article">
-          <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
-          <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты
-            свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает отказаться от кредитов и экономить деньги на процентах и штрафах</p>
-        </div>
-
-        <div class="article">
-          <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
-          <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты
-            свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает отказаться от кредитов и экономить деньги на процентах и штрафах</p>
-        </div>
-
-        <div class="article">
-          <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
-          <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает отказаться от кредитов и экономить
-            деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает
-            отказаться от кредитов и экономить деньги на процентах и штрафахНе могли покрыть внезапные траты свыше
-            7000 ₽. Доступ к
-            заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах</p>
-        </div>
-
-        <div class="article">
-          <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
-          <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает отказаться от кредитов и экономить
-            деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
-            помогает
-            отказаться от кредитов и экономить деньги на процентах и штрафах</p>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <p class="body-text-18 body-text-18-bold">Высококачественный прототип будущего проекта обнадёживает?</p>
+              <button class="questions__button"></button>
+            </summary>
+            <div>
+              <p class="questions__text body-text-18">
+                В частности, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по
+                разработке дальнейших
+                направлений развития. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня
+                говорит о возможностях существующих финансовых и административных условий.
+              </p>
+            </div>
+          </details>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section class="submit" id="submit">
-    <div class="container">
-      <h2 class="headline headline-2">Отправь форму</h2>
-      <form action="" class="form">
-        <div class="form__inputs">
-          <div class="form__input success">
-            <input type="text" class="form__input body-text-18 " placeholder="Имя" id="name" />
-            <label class="body-text-14 form__input-label" for="name">Имя</label>
+    <section class="articles">
+      <div class="container">
+        <div class="articles__wrapper">
+          <div class="article">
+            <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
+            <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты
+              свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает отказаться от кредитов и экономить деньги на процентах и штрафах</p>
           </div>
-          <div class="form__input error">
-            <input type="text" class="form__input body-text-18" placeholder="Телефон" id="phone" />
-            <label class="body-text-14 form__input-label" for="phone">Телефон</label>
-            <p class="form__input-helper">helperText</p>
+
+          <div class="article">
+            <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
+            <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает отказаться от кредитов и экономить деньги на процентах и штрафах Не могли покрыть внезапные траты
+              свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает отказаться от кредитов и экономить деньги на процентах и штрафах</p>
+          </div>
+
+          <div class="article">
+            <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
+            <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает отказаться от кредитов и экономить
+              деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает
+              отказаться от кредитов и экономить деньги на процентах и штрафахНе могли покрыть внезапные траты свыше
+              7000 ₽. Доступ к
+              заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах</p>
+          </div>
+
+          <div class="article">
+            <p class="body-text-18 body-text-18-bold">Опрошенных пользовались микрокредитами</p>
+            <p class="body-text-16">Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает отказаться от кредитов и экономить
+              деньги на процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным деньгам
+              помогает
+              отказаться от кредитов и экономить деньги на процентах и штрафах</p>
           </div>
         </div>
-        <div class=" form__inputs">
-          <div class="form__input">
-            <label for="accept" class="checkbox">
-              <input type="checkbox" class="form__checkbox" id="accept" />
-              <div class="checkbox__square"></div>
-              Я согласен
-            </label>
-          </div>
+    </section>
 
-          <div class="form__input">
-            <input type="submit" class="button form__input headline headline-5">
+    <section class="submit" id="submit">
+      <div class="container">
+        <h2 class="headline headline-2">Отправь форму</h2>
+        <form action="" class="form" id="form">
+          <div class="form__inputs">
+            <div class="form__input" id="form__input-name">
+              <input type="text" class="form__input body-text-18 " placeholder="Имя" id="name" />
+              <label class="body-text-14 form__input-label" for="name">Имя</label>
+              <p class="form__name-helper" id="form__name-helper"></p>
+            </div>
+            <div class=" form__input" id="form__input-phone">
+              <input type="text" class="form__input body-text-18" placeholder="Телефон" id="phone"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+              <label class="body-text-14 form__input-label" for="phone">Телефон</label>
+              <p class="form__phone-helper" id="form__phone-helper"></p>
+            </div>
           </div>
-        </div>
-      </form>
-    </div>
-  </section>
+          <div class=" form__inputs">
+            <div class="form__input">
+              <label for="accept" class="checkbox">
+                <input type="checkbox" class="form__checkbox" id="accept" />
+                <div class="checkbox__square"></div>
+                <span id="checkbox-text">Я отказываюсь</span>
+              </label>
+            </div>
 
-  <footer class="footer">
-    <p class="body-text-18">© 2021 Лаборатория интернет</p>
-  </footer>
+            <div class="form__input">
+              <input type="submit" class="button form__input headline headline-5" id="submit-button" disabled>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="body-text-18">© 2021 Лаборатория интернет</p>
+    </footer>
   </div>
 </body>
 

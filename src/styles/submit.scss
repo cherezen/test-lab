@@ -19,8 +19,6 @@
     flex-wrap: wrap;
   }
 
-
-
   &__input {
     position: relative;
 
@@ -62,8 +60,6 @@
         }
       }
 
-
-
       &[type="submit"] {
         width: 384px;
         background-color: $primary-color;
@@ -71,6 +67,11 @@
 
         &:hover {
           background-color: $primary-hover-color;
+          border: none;
+        }
+
+        &:disabled {
+          background-color: $grey-color;
         }
       }
 
@@ -108,7 +109,8 @@
       border: 2px solid $dangerous-color;
     }
 
-    .form__input-helper {
+    .form__name-helper,
+    .form__phone-helper {
       margin-top: 5px;
       color: $dangerous-color;
     }

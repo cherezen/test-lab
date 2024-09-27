@@ -10,6 +10,7 @@
 @import "articles.scss";
 @import "submit.scss";
 @import "footer.scss";
+@import "menu.scss";
 
 * {
   box-sizing: border-box;
@@ -64,5 +65,23 @@
 
   &_4 {
     background-image: url('../images/how-it-works_icon-4.svg');
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1219px) {
+  .container {
+    width: 728px;
+  }
+}
+
+@media(min-width: 376px) and (max-width: 768px) {
+  .container {
+    width: 342px;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 375px) {
+  .container {
+    width: 288px;
   }
 }

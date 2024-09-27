@@ -16,6 +16,7 @@
   &__inputs {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
 
@@ -138,6 +139,61 @@
       background-size: auto;
       background-repeat: no-repeat;
       border-color: $primary-color;
+    }
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1220px) {
+  .submit {
+    padding: 56px 0;
+  }
+
+  .form {
+    margin: 32px 0;
+    width: 100%;
+
+    &__input {
+      input {
+        width: 352px;
+
+        &[type="submit"] {
+          width: 352px;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .submit {
+    padding: 56px 0;
+
+    .headline-2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .form {
+    width: 100%;
+    margin-top: 30px;
+
+    &__inputs {
+      row-gap: 20px;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    &__input {
+      width: 100%;
+
+      input {
+        &[type="submit"] {
+          width: 100%;
+        }
+      }
     }
   }
 }

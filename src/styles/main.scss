@@ -28,9 +28,42 @@
   &__text {
     margin-top: 18px;
     color: $white-color;
+    text-align: center;
   }
 
   &__button {
     margin-top: 92px;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 1220px) {
+  .main {
+    .headline-1 {
+      font-size: 40px;
+      line-height: 56px;
+    }
+
+    &__button {
+      margin-top: 40px;
+    }
+
+
+  }
+}
+
+@media(min-width: 320px) and (max-width: 768px) {
+  .main {
+    .headline-1 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &__text {
+      margin-top: 10px;
+    }
+
+    &__button {
+      margin-top: 26px;
+    }
   }
 }

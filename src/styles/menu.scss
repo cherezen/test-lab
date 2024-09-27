@@ -1,0 +1,68 @@
+.menu {
+  display: none;
+  padding: 0 16px;
+
+  &__header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $light-grey-color;
+  }
+
+  .logo {
+    &__name {
+      color: $black-color;
+    }
+  }
+
+  &__close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: $black-color;
+      transform: rotate(45deg);
+
+      &:nth-child(2) {
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 8px;
+      }
+    }
+  }
+
+  .nav {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        color: $grey-color;
+      }
+
+      border-bottom: 1px solid $light-grey-color;
+    }
+
+    &__button {
+      width: 24px;
+      height: 24px;
+      background: url('../images/menu_arrow.svg') center center / auto no-repeat;
+      border: none;
+    }
+
+  }
+}
